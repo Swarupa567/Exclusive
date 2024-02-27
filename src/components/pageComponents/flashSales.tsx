@@ -14,7 +14,7 @@ function FlashSales() {
           width={20}
           height={40}
         />
-        <p className="text-[16px] font-semibold">Today's</p>
+        <p className="text-[16px] font-semibold">Today&#39s</p>
       </div>
       <div className="flex justify-between pt-[24px] items-center">
         <p className="text-[28px] md:text-[36px] font-semibold">Flash Sales</p>
@@ -37,7 +37,11 @@ function FlashSales() {
       </div>
       <div className="flex gap-[30px] overflow-hidden pt-[24px] pb-[60px]">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item: any, index: any) => {
-          return <Product />;
+          return (
+            <div key={index}>
+              <Product />;
+              </div>
+            )
         })}
       </div>
       <CustomButton

@@ -26,7 +26,11 @@ function BestSellingProducts() {
       </div>
       <div className="flex gap-4 overflow-hidden justify-between pt-8">
         {[1, 2, 3, 4, 5].map((item: any, index: any) => {
-          return <Product />;
+          return (
+          <div key={index}>
+            <Product />;
+            </div>
+          )
         })}
       </div>
     </div>

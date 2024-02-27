@@ -39,12 +39,20 @@ function ExploreProducts() {
       </div>
       <div className="flex gap-8 overflow-hidden pt-[24px] pb-[60px]">
         {[1, 2, 3, 4, 5, 6].map((item: any, index: number) => {
-          return <Product />;
+          return (
+            <div key={index}>
+              <Product />;
+              </div>
+            )
         })}
       </div>
       <div className="flex gap-8 overflow-hidden pt-[24px] pb-[60px]">
         {[1, 2, 3, 4, 5, 6].map((item: any, index: number) => {
-          return <Product />;
+          return (
+            <div key={index}>
+              <Product />;
+              </div>
+            )
         })}
       </div>
       <CustomButton buttonLabel="View All Products" />
